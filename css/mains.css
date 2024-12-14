@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --rich-black: #001021ff;
+  --rich-black-light: rgb(0, 30, 62);
+  --blue-ncs: #1481baff;
+  --aero: #11b5e4ff;
+  --process-cyan: #0caadcff;
+}
+
+body {
+  background: var(--rich-black);
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: var(--rich-black-light);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .my-name {
+  margin: auto 0 auto 1em;
+  display: inline;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--blue-ncs);
+}
+.navbar .my-name span {
+  color: var(--process-cyan);
+}
+.navbar nav {
+  justify-content: space-between;
+  height: auto;
+  margin-right: 2em;
+}
+.navbar nav li {
+  display: inline;
+}
+.navbar nav li a {
+  text-decoration: none;
+  color: var(--process-cyan);
+}
+.navbar nav li:hover {
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 5em;
+}
+.hero .container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto auto;
+  text-align: center;
+  color: var(--blue-ncs);
+}
+.hero .left-col {
+  margin: auto;
+  display: table;
+  table-layout: fixed;
+  width: 50%;
+  height: 50%;
+}
+.hero .left-col p {
+  display: none;
+  padding: auto;
+  width: 100%;
+  margin: 0px;
+}
+.hero .left-col .degree {
+  display: block;
+}
+.hero .left-col .adventure {
+  display: block;
+}
+.hero .left-col h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+.hero .left-col hr {
+  color: var(--process-cyan);
+}
+.hero .left-col .adventure {
+  font-weight: bold;
+}
+.hero .right-col {
+  width: 50%;
+  height: 50%;
+}
+.hero .right-col img {
+  width: 70%;
+  height: 70%;
+  border-radius: 10%;
+  border: 5px solid var(--process-cyan);
+}
+
+.my-profile {
+  color: var(--aero);
+  margin-top: 3em;
+}
+
+@media only screen and (min-width: 800px) {
+  .hero .left-col p {
+    display: block;
+  }
+}/*# sourceMappingURL=mains.css.map */

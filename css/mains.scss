@@ -16,18 +16,21 @@ body {
 .navbar {
     background: var(--rich-black-light);
     position: fixed;
+    left: 0;
     width: 100%;
     top: 0;
 
     .container {
         display: flex;
         place-content: space-between;
+        margin: auto;
     }
 
     .my-name {
         margin: auto 0 auto 1em;
         display: inline;
         text-decoration: none;
+        font-size: 2em;
         font-weight: bold;
         color: var(--blue-ncs);
         span {
@@ -36,12 +39,24 @@ body {
     }
 
     nav {
-        justify-content: space-between;
-        height: auto;
+        width: 33%;
+        display: flex;
+        place-content: flex-end;
         margin-right: 2em;
-        
+
+
+        .tablist {
+            display: flex;
+            list-style: none;
+            padding: auto;
+        }
+
+        .current {
+            font-weight: bold;
+        }
+
         li {
-            display:inline;
+            margin-left: 1em;
             a {
                 text-decoration: none;
                 color: var(--process-cyan);

@@ -15,17 +15,20 @@ body {
 .navbar {
   background: var(--rich-black-light);
   position: fixed;
+  left: 0;
   width: 100%;
   top: 0;
 }
 .navbar .container {
   display: flex;
   place-content: space-between;
+  margin: auto;
 }
 .navbar .my-name {
   margin: auto 0 auto 1em;
   display: inline;
   text-decoration: none;
+  font-size: 2em;
   font-weight: bold;
   color: var(--blue-ncs);
 }
@@ -33,12 +36,21 @@ body {
   color: var(--process-cyan);
 }
 .navbar nav {
-  justify-content: space-between;
-  height: auto;
+  width: 33%;
+  display: flex;
+  place-content: flex-end;
   margin-right: 2em;
 }
+.navbar nav .tablist {
+  display: flex;
+  list-style: none;
+  padding: auto;
+}
+.navbar nav .current {
+  font-weight: bold;
+}
 .navbar nav li {
-  display: inline;
+  margin-left: 1em;
 }
 .navbar nav li a {
   text-decoration: none;
